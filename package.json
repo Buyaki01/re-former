@@ -1,5 +1,15 @@
 {
   "name": "re-former",
   "private": true,
-  "dependencies": {}
+  "scripts": {
+    "stylelint-fix": "npx stylelint --fix '**/*.{css,scss}'",
+    "rubocop-fix": "rubocop --except Style/FrozenStringLiteralComment -a"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "stylelint": "^13.3.3",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-csstree-validator": "^1.8.0",
+    "stylelint-scss": "^3.17.2"
+  }
 }
