@@ -10,13 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20_200_720_135_735) do
-  create_table 'users', force: :cascade do |t|
-    t.string 'username', limit: 20
-    t.string 'email', limit: 20
-    t.string 'password', limit: 8
-    t.datetime 'created_at', null: false
-    t.datetime 'updated_at', null: false
-    t.string 'confirm_password'
+ActiveRecord::Schema.define(version: 2020_07_20_135735) do
+
+  create_table "users", force: :cascade do |t|
+    t.string "username", limit: 20
+    t.string "false", limit: 8
+    t.string "email", limit: 20
+    t.string "password", limit: 8
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "confirm_password"
   end
+
 end
