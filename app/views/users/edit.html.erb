@@ -1,0 +1,26 @@
+<h1> Edit User </h1>
+<%= form_for(@user, html: {multipart: true}) do |f| %>
+    <p>
+      <%= f.label :username%><br />
+      <%= f.text_field :username%>
+    </p>
+      
+    <p>
+      <%= f.label :email %><br />
+      <%= f.text_field :email %>
+    </p>
+    
+    <p>
+      <%= f.label :password %><br />
+      <%= f.password_field :password %>
+    </p>
+  
+    <p>
+      <%= f.label :confirm_password %><br />
+      <%= f.password_field :confirm_password %>
+    </p>
+    
+    <p>
+      <%= f.submit %>
+    </p>
+  <% end %>
